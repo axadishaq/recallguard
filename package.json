@@ -1,0 +1,25 @@
+{
+  "name": "recallguard",
+  "version": "0.1.0",
+  "description": "Multi-agent FDA drug recall checker for independent pharmacies. Zetaris data layer, Meterless H-MEM memory, Nightshift/NVIDIA models.",
+  "private": true,
+  "type": "module",
+  "license": "Apache-2.0",
+  "scripts": {
+    "fetch-data": "tsx scripts/fetch_fda.ts",
+    "check": "tsx src/cli.ts",
+    "ui": "tsx src/ui/server.ts",
+    "zetaris:stage": "tsx scripts/stage_zetaris.ts",
+    "test": "tsx --test tests/*.test.ts",
+    "test:hmem": "tsx scripts/hmem_conformance.ts"
+  },
+  "dependencies": {
+    "alasql": "^4.6.0",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}

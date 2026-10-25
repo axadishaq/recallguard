@@ -1,0 +1,173 @@
+[
+ {
+  "sku": "SKU-1001",
+  "ndc11": "69448002563",
+  "item_name": "PEGFILGRASTIM-CBQV 6 MG/.6ML",
+  "supplier": "Accord BioPharma, Inc.",
+  "lot_number": "2199821",
+  "qty_on_hand": 5,
+  "shelf_location": "A6"
+ },
+ {
+  "sku": "SKU-1002",
+  "ndc11": "62795400609",
+  "item_name": "HOMEOPATHIC ALLERGY NASAL SPRAY 20ML",
+  "supplier": "MediNatura Inc.",
+  "lot_number": "X240137",
+  "qty_on_hand": 8,
+  "shelf_location": "A7"
+ },
+ {
+  "sku": "SKU-1003",
+  "ndc11": "29300018701",
+  "item_name": "BISOPROLOL FUMARATE AND HYDROCHLOROTHIAZIDE 6.25 MG/1",
+  "supplier": "Unichem Pharmaceuticals (USA), Inc.",
+  "lot_number": "GBHL24005A",
+  "qty_on_hand": 11,
+  "shelf_location": "A8"
+ },
+ {
+  "sku": "SKU-1004",
+  "ndc11": "10122061010",
+  "item_name": "CLEVIPIDINE .5 MG/ML",
+  "supplier": "Chiesi USA, Inc.",
+  "lot_number": "X240211",
+  "qty_on_hand": 14,
+  "shelf_location": "A9"
+ },
+ {
+  "sku": "SKU-1005",
+  "ndc11": "63347060001",
+  "item_name": "UNDECYLENIC ACID 25 G/100ML",
+  "supplier": "Blaine Labs Inc.",
+  "lot_number": "BL3468",
+  "qty_on_hand": 17,
+  "shelf_location": "A10"
+ },
+ {
+  "sku": "SKU-1006",
+  "ndc11": "72657012803",
+  "item_name": "CETIRIZINE 5 MG/1",
+  "supplier": "GLENMARK THERAPEUTICS INC., USA",
+  "lot_number": "X240285",
+  "qty_on_hand": 20,
+  "shelf_location": "A11"
+ },
+ {
+  "sku": "SKU-1007",
+  "ndc11": "54365040039",
+  "item_name": "CHLORHEXIDINE GLUCONATE AND ISOPROPYL ALCOHOL 20 MG/ML",
+  "supplier": "CareFusion 213, LLC",
+  "lot_number": "4080695",
+  "qty_on_hand": 23,
+  "shelf_location": "A12"
+ },
+ {
+  "sku": "SKU-1008",
+  "ndc11": "43598083005",
+  "item_name": "ATORVASTATIN CALCIUM 10 MG/1",
+  "supplier": "Dr. Reddy's Laboratories Inc",
+  "lot_number": "L257349",
+  "qty_on_hand": 71,
+  "shelf_location": "A1"
+ },
+ {
+  "sku": "SKU-1009",
+  "ndc11": "00615801505",
+  "item_name": "METFORMIN HYDROCHLORIDE 500 MG/1",
+  "supplier": "NCS HealthCare of KY, LLC dba Vangard Labs",
+  "lot_number": "L257356",
+  "qty_on_hand": 84,
+  "shelf_location": "A2"
+ },
+ {
+  "sku": "SKU-1010",
+  "ndc11": "50090297400",
+  "item_name": "LISINOPRIL AND HYDROCHLOROTHIAZIDE 25 MG/1",
+  "supplier": "A-S Medication Solutions",
+  "lot_number": "L257363",
+  "qty_on_hand": 97,
+  "shelf_location": "A3"
+ },
+ {
+  "sku": "SKU-1011",
+  "ndc11": "42291002510",
+  "item_name": "AMLODIPINE BESYLATE 2.5 MG/1",
+  "supplier": "AvKARE",
+  "lot_number": "L257370",
+  "qty_on_hand": 30,
+  "shelf_location": "A4"
+ },
+ {
+  "sku": "SKU-1012",
+  "ndc11": "50090787100",
+  "item_name": "LEVOTHYROXINE SODIUM 88 UG/1",
+  "supplier": "A-S Medication Solutions",
+  "lot_number": "L257377",
+  "qty_on_hand": 43,
+  "shelf_location": "A5"
+ },
+ {
+  "sku": "SKU-1013",
+  "ndc11": "71610066300",
+  "item_name": "OMEPRAZOLE 20 MG/1",
+  "supplier": "Aphena Pharma Solutions - Tennessee, LLC",
+  "lot_number": "L257384",
+  "qty_on_hand": 56,
+  "shelf_location": "A6"
+ },
+ {
+  "sku": "SKU-1014",
+  "ndc11": "70518273700",
+  "item_name": "LOSARTAN POTASSIUM AND HYDROCHLOROTHIAZIDE 100 MG/1",
+  "supplier": "REMEDYREPACK INC.",
+  "lot_number": "L257391",
+  "qty_on_hand": 69,
+  "shelf_location": "A7"
+ },
+ {
+  "sku": "SKU-1015",
+  "ndc11": "55700036290",
+  "item_name": "SERTRALINE HYDROCHLORIDE 100 MG/1",
+  "supplier": "Quality Care Products LLC",
+  "lot_number": "L257398",
+  "qty_on_hand": 82,
+  "shelf_location": "A8"
+ },
+ {
+  "sku": "SKU-1016",
+  "ndc11": "82804029490",
+  "item_name": "GABAPENTIN 400 MG/1",
+  "supplier": "Proficient Rx LP",
+  "lot_number": "L257405",
+  "qty_on_hand": 95,
+  "shelf_location": "A9"
+ },
+ {
+  "sku": "SKU-1017",
+  "ndc11": "42708014830",
+  "item_name": "SIMVASTATIN 20 MG/1",
+  "supplier": "QPharma, Inc.",
+  "lot_number": "L257412",
+  "qty_on_hand": 28,
+  "shelf_location": "A10"
+ },
+ {
+  "sku": "SKU-1018",
+  "ndc11": "27241001531",
+  "item_name": "MONTELUKAST SODIUM 4 MG/1",
+  "supplier": "Ajanta Pharma USA Inc.",
+  "lot_number": "L257419",
+  "qty_on_hand": 41,
+  "shelf_location": "A11"
+ },
+ {
+  "sku": "SKU-1019",
+  "ndc11": "76204001001",
+  "item_name": "ALBUTEROL SULFATE .63 MG/3ML",
+  "supplier": "Ritedose Pharmaceuticals, LLC",
+  "lot_number": "L257426",
+  "qty_on_hand": 54,
+  "shelf_location": "A12"
+ }
+]
