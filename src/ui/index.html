@@ -152,6 +152,9 @@ $("f").addEventListener("submit", (e) => {
   const done = () => { src.close(); $("run").disabled = false; };
   src.addEventListener("report", done); src.addEventListener("failure", done); src.onerror = done;
 });
+
+// ?autorun=1 starts a check on load (used for kiosk demos and screenshots).
+if (new URLSearchParams(location.search).has("autorun")) $("f").requestSubmit();
 </script>
 </body>
 </html>

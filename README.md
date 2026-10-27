@@ -2,7 +2,9 @@
 
 **A multi-agent FDA drug-recall checker for independent pharmacies.** RecallGuard cross-checks every item on the shelf against FDA recall reports. It reconciles mismatched NDC formats, reads the free-text lot lists in each recall, and gives the pharmacist a cited action list: *pull now*, *quarantine and verify serials*, or *cleared*. It also remembers what staff have already handled, so the next check only raises new problems.
 
-> Open Agent Hackathon 2026 · Track 2: **The Agent That Can Explain Why**
+> Open Agent Hackathon 2026 · Track 2: **The Agent That Can Explain Why** · [Pitch deck (PDF)](docs/RecallGuard-deck.pdf) · [Demo script](docs/DEMO_SCRIPT.md)
+
+![RecallGuard web UI: action cards with FDA lot evidence, live agent trace and H-MEM memory](docs/img/ui.png)
 
 ## The problem
 
