@@ -81,7 +81,18 @@ Each run writes three files to `runs/`:
 - `<runId>.report.json`: structured findings
 - `<runId>.report.md`: the pharmacist's action list
 
-Examples are in `output_examples/`.
+### Sample inputs and outputs
+
+All four were produced in sample mode from a clean memory state. Each has a `.report.md` (action list) and a `.trace.jsonl` (every agent step, SQL query and decision).
+
+| # | Input (request) | Output | What it shows |
+|---|---|---|---|
+| 1 | `Weekly recall check of all shelf stock` | [report](output_examples/session1_full_check.report.md) · [trace](output_examples/session1_full_check.trace.jsonl) | 4 pull-now, 1 quarantine (serial subset), 17 matches cleared by lot; the plan revises itself when an NDC can't be resolved |
+| 2 | Same request, after `--resolve SKU-1003 D-0301-2026 "returned to supplier…"` | [report](output_examples/session2_after_resolution.report.md) · [trace](output_examples/session2_after_resolution.trace.jsonl) | H-MEM across sessions: bisoprolol ALREADY_RESOLVED (alert suppressed), the rest PREVIOUSLY_FLAGGED |
+| 3 | `Is our bisoprolol affected?` | [report](output_examples/sample3_scoped_bisoprolol.report.md) · [trace](output_examples/sample3_scoped_bisoprolol.trace.jsonl) | Planner scopes to one product; found only through the inferred-product-code step |
+| 4 | `Check the chlorhexidine applicators` | [report](output_examples/sample4_scoped_chlorhexidine.report.md) · [trace](output_examples/sample4_scoped_chlorhexidine.trace.jsonl) | 16 recalls on one product: 1 covers our lot (pull, sterility escalation), 15 cleared |
+
+The requests are also in `input_examples/requests.txt`.
 
 ## Data
 

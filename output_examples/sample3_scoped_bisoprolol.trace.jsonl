@@ -1,0 +1,16 @@
+{"t":2,"agent":"data","kind":"fallback","message":"SAMPLE_MODE=true: using cached openFDA + inventory sample in local SQL engine"}
+{"t":57,"agent":"llm","kind":"fallback","message":"No Nightshift token configured: agents use deterministic reasoning (sample mode)"}
+{"t":60,"agent":"planner","kind":"plan","message":"Plan: resolve_ndc → match_by_ndc → verify_lots → risk_review → report (scope: bisoprolol)","data":{"rationale":"Request names \"bisoprolol\"; check only matching stock."}}
+{"t":73,"agent":"matcher","kind":"sql","message":"Load shelf inventory -> 1 rows (local-sample, 13 ms)","data":{"sql":"SELECT * FROM inventory WHERE LOWER(item_name) LIKE '%bisoprolol%'"}}
+{"t":73,"agent":"orchestrator","kind":"plan","message":"Iteration 1"}
+{"t":76,"agent":"matcher","kind":"sql","message":"Resolve 1 11-digit shelf NDCs against FDA NDC directory (2 candidate formats) -> 0 rows (local-sample, 2 ms)","data":{"sql":"SELECT package_ndc, product_ndc FROM fda_ndc WHERE package_ndc IN ('29300-187-01', '29300-0187-1')"}}
+{"t":76,"agent":"matcher","kind":"decision","message":"0/1 NDCs resolved; unresolved: SKU-1003"}
+{"t":76,"agent":"evaluator","kind":"feedback","message":"Missing evidence: 1 item(s) could not be resolved to an FDA product (SKU-1003). Requesting plan revision."}
+{"t":77,"agent":"planner","kind":"plan","message":"Plan revised: resolve_ndc → match_by_ndc → infer_product_ndc → match_by_name → verify_lots → risk_review → report","data":{"revisions":["Add product-code inference for 1 item(s) missing from the NDC directory","Add name + firm search as last resort for SKU-1003"]}}
+{"t":77,"agent":"orchestrator","kind":"plan","message":"Iteration 2"}
+{"t":92,"agent":"matcher","kind":"sql","message":"Infer product codes for unresolved NDCs and match recalls -> 1 rows (local-sample, 15 ms)","data":{"sql":"SELECT rn.product_ndc AS matched_product_ndc, r.* FROM fda_recall_ndc rn JOIN fda_recalls r ON r.recall_number = rn.recall_number WHERE rn.product_ndc IN ('29300-187', '29300-0187')"}}
+{"t":92,"agent":"matcher","kind":"decision","message":"1 candidate recall matches to verify"}
+{"t":93,"agent":"evaluator","kind":"decision","message":"SKU-1003 BISOPROLOL FUMARATE AND HYDROCHL × D-0301-2026 (Class II): lot_listed → PULL_NOW [conf 0.8]","data":{"evidence":"Lot # GBHL24005A, Exp Date: 09/2026","basis":"product_ndc_inferred"}}
+{"t":93,"agent":"evaluator","kind":"escalation","message":"Escalating SKU-1003 (D-0301-2026, Class II) to Risk agent: cGMP Deviations: recall due to not meeting the N-Nitroso Bisoprolol impurity spe"}
+{"t":93,"agent":"risk","kind":"decision","message":"SKU-1003: standard escalation with 4 required steps"}
+{"t":158,"agent":"reporter","kind":"output","message":"Report ready: 1 findings, 1 new"}
